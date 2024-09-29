@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import Toaster from '@/components/ui/toast/Toaster.vue'
+</script>
 
 <template>
   <Head>
@@ -9,7 +11,10 @@
   </Head>
   <Body class="antialiased">
     <NuxtLayout>
+      <v-app>
       <NuxtPage />
+      </v-app>
     </NuxtLayout>
   </Body>
+    <Toaster />
 </template>

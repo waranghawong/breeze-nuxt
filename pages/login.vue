@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AppLogo from './assets/Icons/AppLogo.vue'
+
 definePageMeta({ middleware: ["guest"] });
 
 const router = useRouter();
@@ -24,7 +26,7 @@ const {
     return login(data);
   },
   {
-    onSuccess: () => router.push("/dashboard"),
+    onSuccess: () => router.push("admin/"),
   }
 );
 </script>
@@ -33,7 +35,7 @@ const {
   <AuthCard>
     <template #logo>
       <NuxtLink to="/">
-        <ApplicationLogo class="w-20 h-20 fill-current text-gray-500" />
+          <AppLogo />
       </NuxtLink>
     </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Head>
-      <Title>Laravel</Title>
+      <Title>Ancient Rusher VA</Title>
     </Head>
 
     <slot />
